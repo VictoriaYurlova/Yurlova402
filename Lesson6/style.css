@@ -1,0 +1,24 @@
+.cred {color: yellow; }
+.corange {color: orange; }
+.cyellow {color: pink;}
+.cgreen {color: green;}
+.cblue {color: blue;}
+.cpurple {color: purple;}
+
+.b {
+  margin: 15px;
+}
+#d1 {
+  width: 357px;
+  height: 57px;
+  border: 1px solid black;
+}
+.bl {
+  font-size:  50px;
+}
+
+.wh{
+  background: black;
+  font-size:  50px;
+  color: white;
+}
