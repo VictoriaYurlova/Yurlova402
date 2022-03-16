@@ -1,0 +1,31 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+      <title>Форма</title>
+    </head>
+    <body>
+       <div class="str-bg-peach">
+         <form >
+             <div class="form-bg-white">
+               <div class="form-title"> 
+                   Написать нам <br>
+               </div>
+               <div>
+                 <br><input type="text" class="input-username" placeholder="Username"><br>
+               </div>
+               <div>
+                 <br><input type="text" class="input-email" placeholder="Email"> <br>
+               </div>
+               <div>
+                 <br><input type="text" class="input-ms" placeholder="Сообщение...">
+               </div>
+               <div>
+                 <br><button type="button" class="btn">
+                    Отправить
+                 </button>
+               </div>
+            </div>
+        </form>  
+      </div> 
+    </body>
+</html>
