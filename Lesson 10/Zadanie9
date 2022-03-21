@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Блоки в ряд</title>
+  </head>
+  <style>
+    .bl{
+      float: left;
+     line-height: 120px;
+     font-size: 40px;
+     background:#FFA07A;
+     color: black;
+     margin-top: 60px;
+     width: 320px;
+     margin-right: 10px;
+     text-align: center;
+    }
+    </style>
+  <body>
+    <p class="bl">Item1</p>
+        <p class="bl">Item2</p>
+        <p class="bl">Item3</p>
+  </body>
+</html>
