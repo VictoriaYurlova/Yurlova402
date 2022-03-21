@@ -1,0 +1,30 @@
+.spisok {
+    counter-reset: li;
+    list-style: none; 
+    font: 14px;
+    text-shadow: rgba(255,255,255,.5);
+}
+
+.spisok a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #DAD2CA;
+    border-radius: 10px;
+    }
+
+.spisok a:before {
+     content: counter(li);
+     counter-increment: li;
+     position: absolute;
+     left: -15px;
+     top: 15px;
+     margin-top: -1.3em;
+     background: #8FD4C1;
+     height: 30px;
+     width: 30px;
+     line-height: 30px;
+     border: 5px solid white;
+     text-align: center;
+     border-radius: 20px;
