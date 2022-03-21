@@ -1,0 +1,16 @@
+<html>
+   <head>
+     <title>Списки</title>
+      <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+      <ul class="spisok">
+       <li><a>Элемент списка</a></li>
+       <li><a>Элемент списка</a></li>
+       <li><a>Элемент списка</a></li>
+       <li><a>Элемент списка</a></li>
+       <li><a>Элемент списка</a></li>
+   
+</ul>
+  </body>
+  </html>
