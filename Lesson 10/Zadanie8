@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bloki v bloki</title>
+  </head>
+  <style>
+    .bl1 {margin: 51px;
+    padding: 196px;
+   background-color: #407bbf;
+  }
+   .bl2{margin: 0px;
+    padding: 75px;
+    bottom: 392px;
+    right: 159px;
+    top: 120px;
+    left: 170px;
+  position: absolute;
+background-color: #FA8072;}
+.bl3{ text-align:center;
+  margin:0px;
+  padding: 75px;
+  bottom: 449px;
+  right: 248px;
+  top: 180px;
+  left: 270px;
+position: absolute;
+background-color:#228B22;
+}
+  </style>
+  <body>
+    <p class="bl1"></p>
+    <p class="bl2"></p>
+    <p class="bl3">Block</p>
+  </body>
+</html>
