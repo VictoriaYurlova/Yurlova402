@@ -1,0 +1,25 @@
+.bg-dark {
+    background-color: #333;
+}
+.text-white {
+    color: #ffffff;
+}
+
+.p-0 {
+    padding: 0rem;
+}
+.p-1 {
+    padding: 1rem;
+}
+.p-2 {
+    padding: 1.5rem;
+}
+.p-3 {
+    padding: 2rem;
+}
+.p-4 {
+    padding: 2.5rem;
+}
+.p-5 {
+    padding: 3rem;
+}
