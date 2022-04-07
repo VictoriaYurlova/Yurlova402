@@ -1,3 +1,7 @@
+.row {
+    display: flex;
+}
+
 .p-0 {
     padding: 0;
 }
@@ -77,6 +81,12 @@ body, ul, h1, h2, h3, h4, h5 {
 .content {
     
 }
+.controvn {
+    display: flex;
+}
+.levcont {
+    width: 22%;
+}
 article {
     border: 1px solid black;
     padding: 1.5rem;
@@ -99,3 +109,43 @@ article {
 .post-meta span {
     font-style: italic;
 }
+
+.paginate {
+    display: flex;
+    list-style: none;
+}
+.paginate-item {
+    border: 1px solid #273b5a;
+    margin: 2px;
+    background-color: #273b5a;
+    transition: 0.95s;
+    
+}
+
+.paginate-item a {
+    padding: 0.75rem;
+}
+
+.paginate a, .paginate a:visited {
+    color: #fff;
+}
+.paginate a {
+    text-decoration: none;
+}
+
+.paginate-item:hover {
+    background-color: #fff;
+    /* border-color: #e42075; */
+}
+
+.paginate-item:hover a {
+    color: #273b5a;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+
+
