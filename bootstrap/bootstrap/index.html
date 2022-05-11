@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar bg-light">
+      <button type="button" class="btn btn-info position-relative"> <a href="Профиль.html">Профиль</a>
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">Новые уведомления</span>
+        </span>
+    </nav>
+    <div class="row bg-light" style="height: 80px;">
+      <div class="col-3 bg-light">
+        <li>
+          <a class="nav-link active" href="Mod.html">Главная страница</a>
+        </li>
+      </div>
+      <div class="col-3 bg-light">
+        <li>
+          <a class="nav-link" href="Страны.html">Страны</a>
+        </li>
+      </div>
+      <div class="col-3 bg-light">
+        <li>
+          <a class="nav-link" href="#">О нас</a>
+        </li>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row bg-info my-2" style="height: 120px;">
+        <div class="col-12">
+          <div class="p-3 bg-info text-white counter container1">
+            Мы приветствуем тебя на нашем сайте! Здесь ты сможешь найти для себя много нужных советов и посмотреть на мир не выходя из дома!!!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-3" style="">
+        <div class="col-3 bg-info me-3">
+          <div class="levcont">
+            <ul>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Увлекательные истории</option>
+                <option value="1">Рассказы туристов</option>
+                <option value="2">Вклейки из журналов и книг/option>
+                <option value="3">Комментарии</option>
+              </select>
+              <select class="form-select"  aria-label="Default select example">
+                <option selected>Музыка в дорогу</option>
+                <option value="1">Руссая музыка</option>
+                <option value="2">Зарубежная музыка</option>
+                <option value="3">Смешенный жанр</option>
+              </select>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-8 bg-light ms-3">
+        
+            <div>
+              
+                <div class="post-header">
+                  <img src="" alt="">
+                  <h3>Испания</h3>
+                  <div class="post-meta">
+                    <p>Год основания: <span class="post-age">1920 Год</span></p>
+                    <p>Города: <span class="post-name">Мадрид, Барселона, Валенсия</span></p>
+                  </div>
+                </div>
+                <div class="post-body">
+                  <img src="images.jpg" alt="">
+                  <p>Вдоль восточного побережья Испании во 2-м тысячелетии до н. э. появились иберские племена;
+                    некоторые гипотезы связывают их прародину с Северной Африкой.</p>
+                </div>
+                <div class="post-footer">
+                </div>
+            </div>
+           
+                <button type="button" class="btn btn-light"> <a href="St.html">Достопримечательности</a></button>
+                <button type="button" class="btn btn-light"> <a href="KR.html">Красивые места</a></button> 
+                
+                <div>
+              
+                  <div class="post-header">
+                    <img src="" alt="">
+                    <h3>Франция</h3>
+                    <div class="post-meta">
+                      <p>Год основания: <span class="post-age">1904 Год</span></p>
+                      <p>Города: <span class="post-name">Париж, Марсель, Лион</span></p>
+                    </div>
+                  </div>
+                  <div class="post-body">
+                    <img src="imag.jpg" alt="">
+                    <p>Франция в доисторический период была местом древнейших стоянок неандертальцев и кроманьонцев. 
+                      В эпоху неолита на территории Франции существовало несколько богатых памятниками доисторических культур.</p>
+                  </div>
+                  <div class="post-footer">
+                    <button type="button" class="btn btn-light">Достопримечательности</button>
+                  <button type="button" class="btn btn-light">Красивые места</button> 
+              
+                  </div>
+                </div>
+            
+          </div>
+          <div class="col-8 bg-primary ms-3">
+        
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center" style="height: 50px;">
+          <div class="col-2 bg-primary me-3">
+            <button type="button" class="btn btn-success">Партнёры</button>
+          </div>
+          <div class="col-2 bg-info me-3">
+            <button type="button" class="btn btn-success">Контакты</button>
+          </div>
+          <div class="col-2 bg-primary me-3">
+            <button type="button" class="btn btn-success">Отзывы</button>
+          </div>
+        </div>
+
+        <div class="row bg-primary my-3" style="height: 50px;">
+          <div class="col-12">
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Показать лайв тосты</button>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 мин назад</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+    </div>
+    <div class="toast-body">
+      Привет, мир! Это тост-сообщение.
+    </div>
+  </div>
+</div>
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Пожелания</label>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    
+</body>
+
+</html>
