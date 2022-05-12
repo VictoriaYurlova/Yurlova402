@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Bootstrap</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -13,29 +13,66 @@
   <div class="container">
     <nav class="navbar bg-light">
 
+      <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#exampleModal" title="Авторизироваться">
+        <a href="#myModal" data-toggle="modal"></a>
+      </button>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       Профиль
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Логин</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Ваш логин должен содержать только латинские буквы.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти в систему</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+              <a class="nav-link active" aria-current="page" href="#">Главная страница</a>
+              <a class="nav-link" href="#">Страны</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">О нас</a>
+              <form class="d-flex">
+                <input class="form-control me-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     </nav>
-    <div class="row bg-danger" style="height: 80px;">
-      <div class="col-3 bg-info">
-        <li>
-          <a class="nav-link active" href="#">Главная страница</a>
-        </li>
-      </div>
-      <div class="col-3 bg-info">
-        <li>
-          <a class="nav-link" href="#">Музыка и познавательные шоу</a>
-        </li>
-      </div>
-      <div class="col-3 bg-info">
-        <li>
-          <a class="nav-link" href="#">О нас</a>
-        </li>
-      </div>
-      <div class="col-3 bg-info">
-        <li>
-          <a class="nav-link" href="#">Страны</a>
-        </li>
-      </div>
-    </div>
+    
+   
     <div class="container">
       <div class="row bg-info my-2" style="height: 120px;">
         <div class="col-12">
@@ -51,15 +88,23 @@
         <div class="col-3 bg-info me-3">
           <div class="levcont">
             <ul>
-              <li>Увлекательные истории</li>
-              <li>Познавательные видео</li>
-              <li>Музыка в дорогу</li>
-              <li>Карты</li>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Увлекательные истории</option>
+                <option value="1">Рассказы туристов</option>
+                <option value="2">Вклейки из журналов и книг/option>
+                <option value="3">Комментарии</option>
+              </select>
+              <select class="form-select"  aria-label="Default select example">
+                <option selected>Музыка в дорогу</option>
+                <option value="1">Руссая музыка</option>
+                <option value="2">Зарубежная музыка</option>
+                <option value="3">Смешенный жанр</option>
+              </select>
             </ul>
           </div>
         </div>
 
-        <div class="col-8 bg-primary ms-3">
+        <div class="col-8 bg-light ms-3">
         
             <div>
               
@@ -81,7 +126,7 @@
             </div>
            
                 <button type="button" class="btn btn-light"> <a href="St.html">Достопримечательности</a></button>
-                <button type="button" class="btn btn-light">Красивые места</button> 
+                <button type="button" class="btn btn-light"> <a href="KR.html">Красивые места</a></button> 
                 
                 <div>
               
@@ -115,20 +160,22 @@
 
       <div class="container">
         <div class="row justify-content-center" style="height: 50px;">
-          <div class="col-2 bg-primary me-3">
+          <div class="col-2 me-3">
             <button type="button" class="btn btn-success">Партнёры</button>
           </div>
-          <div class="col-2 bg-info me-3">
+          <div class="col-2 me-3">
             <button type="button" class="btn btn-success">Контакты</button>
           </div>
-          <div class="col-2 bg-primary me-3">
-            <button type="button" class="btn btn-success">Отзывы</button>
-          </div>
+          
         </div>
 
-        <div class="row bg-primary my-3" style="height: 50px;">
-          <div class="col-12">
-          </div>
+        
+
+        
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Пожелания</label>
         </div>
         <nav aria-label="Page navigation example">
           <ul class="pagination justify-content-center">
@@ -142,6 +189,11 @@
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Пакет JavaScript с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
