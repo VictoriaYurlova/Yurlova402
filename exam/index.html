@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="p-3 bg-secondary">
+      <nav class="navbar bg-light">
+
+      
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+           Профиль
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Логин</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">Ваш логин должен содержать только латинские буквы.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Войти в систему</button>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                  
+                  <a class="nav-link active text-white" aria-current="page" href="Главная.html">Главная страница</a>
+                  <a class="nav-link text-white" href="Страны1.html">Страны</a>
+                  <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">О нас</a>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </nav>
+    </div>
+    
+    
+   
+    
+    <div class="container">
+      <div class="row my-3" style="">
+        <div class="col-3 bg-secondary me-3">
+          <div class="levcont">
+            <ul>
+              <button type="button" class="btn btn-secondary"><a href="История.html"><img src="История.jpg" width="100" height="100" alt="История"></a></button>
+              <button type="button" class="btn btn-secondary"><a href="Исторические факты.html"><img src="Исторические факты.jpg" width="100" height="100" alt="Исторические факты"></a> </button>
+              <button type="button" class="btn btn-secondary"><a href="Карты.html"><img src="Карта.jpg" width="100" height="100" alt="Карта"></a> </button>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-8 bg-light ms-3">
+        
+            <div>
+              
+                <div class="post-header">
+                  <img src="" alt="">
+                  <h3>Испания</h3>
+                  <div class="post-meta">
+                    <p>Год основания: <span class="post-age">1920 Год</span></p>
+                    <p>Города: <span class="post-name">Мадрид, Барселона, Валенсия</span></p>
+                  </div>
+                </div>
+                <div class="post-body">
+                  <img src="images.jpg" alt="">
+                  <p>Вдоль восточного побережья Испании во 2-м тысячелетии до н. э. появились иберские племена;
+                    некоторые гипотезы связывают их прародину с Северной Африкой.</p>
+                </div>
+                <div class="post-footer">
+                </div>
+            </div>
+           
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Достопримечательности</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <article class="bg-classik">
+                      <div class="post-header">
+                          <img src="" alt="">
+                             <h3>Королевский дворце</h3>
+                             <div class="post-meta">
+                             <p>Год основания: <span class="post-age">1764 Год</span></p>
+                             <p>Архитекторы: <span class="post-name">Сабатини и Сакетти</span></p>
+                             </div>  
+                     </div>
+                <div class="post-body">
+                     <img src="274px-Madrid_Palacio_Real_079.jpg" alt="">
+                     <p>Испания — одна из немногих стран мира, где до сих пор сохраняется монархия. 
+                       Но если в Великобритании королева — это символ, то испанский король Филипп VI является полноценным лидером государства. 
+                       Одна из привилегий испанских монархов — это роскошная резиденция, расположенная в Мадриде. 
+                       Её построили в середине XVIII века по указу тогдашнего короля Филиппа V, пожелавшего иметь в своем распоряжении дворец, не уступающий Версалю.
+      
+                      Однако жить во дворце Филиппу V не пришлось, ведь он скончался за 18 лет до окончания строительства. 
+                      Первым королем, поселившимся в этих стенах, стал Карл III, но даже после его смерти дворец не был завершен, так как внутри долгое время продолжались работы по обустройству интерьера. 
+                      Участие в создании фресок принимали известные итальянские и испанские мастера: Франсиско Гойя, Караваджо, Лука Джордано и многие другие. Украшение дворца заняло не один год, ведь внутри него более тысячи комнат. 
+                      Одного дня не хватит, чтобы посетить их все, а вот самые примечательные из них вам обязательно покажут на экскурсии.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Тыкни сюда</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Красивые места</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <article class="bg-classik">
+                      <div class="post-header">
+                          <img src="" alt="">
+                             <h3>Пещеры Драч, Майорка</h3>
+                             <div class="post-meta">
+                             <p>Красота <span class="post-age">Крупнейшее подземное озеро</span></p>
+                             
+                             </div>  
+                     </div>
+                     <div class="post-body">
+                      <img src="273px-Cuevas_del_Drach.jpg" alt="">
+                      <p>В Пальма-де-Майорка находятся пещеры Драч, 
+                          в частности в муниципалитете Манакор. 
+                          Это набор из четырех впечатляющих пещер, 
+                          созданных фильтрацией соленой воды. 
+                          Одна из достопримечательностей этих пещер - это Озеро Мартель, 
+                          одно из крупнейших подземных озер в мире. 
+                          Если вы хотите насладиться ими в полной мере, 
+                          вы можете арендовать лодку и отправиться на прогулку, 
+                          слушая концерт классической музыки в пещерах.
+                       </p>
+                     </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Перейди обратно</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-light" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Тыкни и увидешь!</a>
+                
+                <div>
+              
+                  <div class="post-header">
+                    <img src="" alt="">
+                    <h3>Франция</h3>
+                    <div class="post-meta">
+                      <p>Год основания: <span class="post-age">1904 Год</span></p>
+                      <p>Города: <span class="post-name">Париж, Марсель, Лион</span></p>
+                    </div>
+                  </div>
+                  <div class="post-body">
+                    <img src="imag.jpg" alt="">
+                    <p>Франция в доисторический период была местом древнейших стоянок неандертальцев и кроманьонцев. 
+                      В эпоху неолита на территории Франции существовало несколько богатых памятниками доисторических культур.</p>
+                  </div>
+                  <div class="post-footer">
+                  </div>
+                 
+                </div>
+                <button type="button" class="btn btn-outline-secondary"><a href="1.html">Открой!</a> </button>
+          </div>
+        </div>
+      </div>
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Пожелания</label>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Пакет JavaScript с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
