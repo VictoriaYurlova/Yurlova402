@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="p-3 bg-secondary">
+    <nav class="navbar bg-light">
+
+      
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       Профиль
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Логин</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Ваш логин должен содержать только латинские буквы.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти в систему</button>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              
+              <a class="nav-link active text-white" aria-current="page" href="Главная.html">Главная страница</a>
+              <a class="nav-link text-white" href="#">Страны</a>
+              <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">О нас</a>
+              <form class="d-flex">
+                <input class="form-control me-2" type="Поиск" placeholder="Поиск" aria-label="Поиск">
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+  </div>
+   
+    
+    <div class="container">
+      <div class="row my-3" style="">
+        <div class="col-3 bg-secondary me-3">
+          <div class="levcont">
+            <ul>
+              <button type="button" class="btn btn-secondary"><a href="История.html"><img src="История.jpg" width="100" height="100" alt="История"></a> </button>
+              <button type="button" class="btn btn-secondary"><a href="Исторические факты.html"><img src="Исторические факты.jpg" width="100" height="100" alt="Исторические факты"></a> </button>
+              <button type="button" class="btn btn-secondary"><a href="Карты.html"><img src="Карта.jpg" width="100" height="100" alt="Карта"></a> </button>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-8 bg-light ms-3">
+        
+            <div>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img align="right" src="Sultanahmetcamii_ilkkezbuacidan.JPG" width="500" height="500" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img align="right" src="Egypt.Giza.Sphinx.01.jpg" width="500" height="500" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img align="right" src="Stockholm_mala_me.jpg" width="500" height="500" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Следующий</span>
+                    </button>
+                  </div>
+              
+                <div class="post-header">
+                  <img src="" alt="">
+                  <h3>Турция</h3>
+                  <div class="post-meta">
+                    <p>Год основания: <span class="post-age">1923 Год</span></p>
+                  </div>
+                </div>
+                <div class="post-body">
+                  <p class="text-decoration-underline">История возникновения</p>
+                  <img align="right" src="турция.jpg" width="215" height="200" alt="турция">
+                  <p>Турция – одно из самых древних государств мира, история которого связана со многими цивилизациями. 
+                      Страна находится в двух частях света – Западной Азии (в основном) и Юго-Восточной Европе (небольшая часть), 
+                      и её омывают воды нескольких морей – Черного, Эгейского, Мраморного и Средиземного. 
+                      Азиатская и европейская части, разделенные двумя проливами – Босфор и Дарданеллы, развивались по-разному. 
+                      Европейская часть Турции носит историческое название — Восточная Фракия, а азиатская – Анатолия или Малая Азия.
+
+                    </p>
+
+<p class="text-decoration-underline"> Турция в 21 вв.</p>
+
+В начале 2000-х гг. в Турции была полностью разрушена экономика, страну наводняла армия безработных, 
+приостановился поток денег от Международного Валютного Фонда. 
+История 21 века связана с противостоянием ислама и демократии. До 2015 года Турция, 
+которая является страной-членом НАТО, старалась стать светским государством.
+
+ 
+                    </p>
+                </div>
+            </div>
+
+            <div>
+              
+              <div class="post-header">
+                <img src="" alt="">
+                <h3>Египед</h3>
+                <div class="post-meta">
+                  <p>Год основания: <span class="post-age">1953 Год</span></p>
+                </div>
+              </div>
+              <div class="post-body">
+                <p class="text-decoration-underline">История возникновения</p>
+                <img align="right" src="египед.jpg" width="215" height="200" alt="египед">
+                <p>Культура страны претерпела существенные изменения. 
+                    Период истории, с начала основания цивилизации в 3000 г. до н.э. до завоевания римлянами в 31 г. до н.э., 
+                    составил почти три тысячи лет.
+
+                    Египет расположен в долине Нила на северо-востоке Африки. 
+                    Цивилизация зародилась в Верхнем Египте, на территории городов Абидос и Хираконполис. 
+                    Затем власть фараонов распространилась на севере в городе Мемфис и Средиземноморье.
+                    
+                    К 3000 г. до н.э. объединенное царство Египта занимало всю долину Нила к северу от первого порога Нила на юге – катаракта, 
+                    рядом с современным Суданом. </p>
+                    
+
+<p class="text-decoration-underline"> Особенности развития в 20-21 вв.</p>
+
+Сегодняшний Египет- крупная арабская страна, площадью 1001 тысяч кв. км, расположенная на северо-востоке Африки. 
+Часть его территории - Синайский полуостров - находится в Азии. 
+Граница между двумя континентами проходит по Суэцкому каналу 96% территории Египта - это пустыня с редкими оазисами, 
+причем значительная часть пустыни- не песчаная, а гористая.
+
+
+                  </p>
+              </div>
+          </div>
+
+          <div class="post-header">
+            <img src="" alt="">
+            <h3>Швеция</h3>
+            <div class="post-meta">
+              <p>Год основания: <span class="post-age">1560-1660 Год</span></p>
+            </div>
+          </div>
+          <div class="post-body">
+            <p class="text-decoration-underline">История возникновения</p>
+            <img align="right" src="швеция.jpg" width="215" height="200" alt="швеция">
+            <p>Люди, которые стали постепенно расселяться на просторах современной Швеции, занимались промыслами, пособными их прокормить. 
+                Предпочтение отдавалось рыбалке и охоте, в том числе загонной. 
+                От прибрежных регионов люди двигались вглубь Скандинавии. 
+                Именно туда отступал ледник, а за ним следовали предки человека. 
+                Они создавали стоянки, где проживали некоторое время, пока в окрестностях не заканчивалась пища. 
+                Самая древняя стоянка была найдена недалеко от Мальме, датирующаяся 8 тыс. до нашей эры.
+
+                  </p>
+                
+
+<p class="text-decoration-underline"> Особенности развития в 20-21 вв.</p>
+
+В 1918-1919 гг. была проведена конституционная реформа, поправки в которую внесены были через два года. 
+В результате чего, в Швеции появилась парламентская форма правления. 
+1930-е гг. были отмечены Великой экономической депрессией, которая вызвала постоянный рост безработицы, 
+забастовки демонстрации. Несмотря на сложные времена, правительству удалось провести успешные реформы в социальной сфере. 
+В частности, была введена страховка от безработицы, ежегодный отпуск и повышены пенсии.
+
+
+
+              </p>
+          </div>
+      </div>
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+     
+
+        
+
+        
+
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Пожелания</label>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Пакет JavaScript с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
