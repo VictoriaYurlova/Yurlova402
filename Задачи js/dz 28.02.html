@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1 = 'Источником пропитания для славянских племен были земледелие, скотоводство, промыслы: охота, рыболовство, собирательство. Племена восточных славян объединялись в союзы племен. Крупнейшими из них были: поляне, древляне, кривичи, вятичи, ильменские славяне. Древнейшая русская летопись, «Повесть временных лет», называет около десяти таких объединений .  ';
+               let predl = str1.replaceAll('и', '*');
+               console.log('str1',str1);
+               console.log( 'str1.predl',predl); //1 задание
+       
+                   let index= str1.indexOf('Племена');
+                   let pr1 = str1.substr(0, index);
+                   console.log('pr1', pr1); // 2 задание
+
+                   let index2= str1.indexOf('Древнейшая');
+                   let prp = str1.substr(index2);
+                   console.log('prp', prp); //3 задание
+
+                       let index3 = str1.indexOf('Словяне');
+                       let slov = str1.slice(index3, index3 + 9);
+                       console.log('slov',slov);//4 задание
+              </script>
+</body>
+</html>
