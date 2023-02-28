@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+       Quos a quibusdam, at nulla, accusamus quia enim cumque quaerat dicta doloremque aut iusto voluptatibus voluptas, 
+       quam dolorem? Beatae delectus tempore magni?
+   </p> 
+
+     <script>
+        //  let a= confirm('Hello World!');
+
+        //  if (a){
+            // alert('lorem ipsum');
+        //  }
+        // console.log('a: ', a);
+        
+        
+        // let b = prompt('Сколько Вам лет?');
+        //  console.log('b: ', b);
+
+        let a = "as'da'sd";
+        let b = 123123.123; 
+        let d = true; 
+        
+        let c = undefined;
+        let e = null;
+
+        let arr = ['asdasd', 123123, null, undefined];
+        let arr1 = new Array(12,123,'');
+
+
+        console.log(typeof a, typeof b, c, typeof d, e, typeof e, arr, typeof arr, arr[1], arr1);
+
+        let cat = {
+              name: 'Happy', 
+              color: 'green',
+              age: 4,
+              gender: false
+
+        };
+
+        // console.log(cat);
+/*
+        let sum = 5 + 5;
+        let div = 65 / 5;
+        let mul = 65 * 5;
+        let div2 = 10 % 2;
+        console.log('sum: ', sum, 'div: ', div, 'mul: ', mul, 'div2: ', div2);
+*/
+
+      let a1 = 83;
+    //   console.log(++a1); 
+    //   console.log(a1);
+
+    // a1 = a1 + 1;
+    //  a1 /= 6;
+    //  a1 += 6;
+    //  console.log(a1);
+
+    //   a1 /=6;
+    //   console.log(a1.toFixed(2));
+
+    let  str1 = 'Price';
+    let  str2 = '$';
+    let  price = (a1 / 6).toFixed(2);
+    let  str3 = str1 + ' ' + str2;
+    let  str4 = `${str1} product: ${price} ${str2}`;
+    str4 += ' small';
+
+    let str_len = str4.length; //длина строки
+    let first_char = str4[0]; // первый символ
+    let last_char = str4[str4.length - 1]; //последний символ 
+    console.log(str4, str_len, first_char, last_char); 
+
+
+    let has_str = str4.includes('product'); //проверка строки вхождение в стоку
+    let index = str4.indexOf('$'); // индекс подстроки
+    let sub = str4.substr(0, index); //вырезает подстроку начиная с 1 до 5
+    let rep1 = str4.replace('$', 'р.'); // замена одной подстроки на другую
+    let sl = str4.slice(index, index + 5); //вырезать после индекса определенное количество символов
+    console.log('has_str: ', has_str, 'index: ', index, 'sub: ', sub, 'rep1: ', rep1, 'sl: ', sl);
+
+    let sp = str4.split(' ');
+    console.log(sp);
+
+    let str55 = 'l Lorem ipsum dolor sit amet consectetur, adipisicing elit.' +
+       'Quos a quibusdam, at nulla, accusamus quia enim cumque quaerat dicta doloremque aut iusto voluptatibus voluptas,' +
+       'quam dolorem? Beatae delectus tempore magni?';
+
+     </script>
+</body>
+</html>

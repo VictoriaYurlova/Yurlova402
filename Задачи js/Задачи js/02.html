@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1 = 'Источником пропитания для славянских племен были земледелие, скотоводство, промыслы: охота, рыболовство, собирательство. Племена восточных славян объединялись в союзы племен. Крупнейшими из них были: поляне, древляне, кривичи, вятичи, ильменские славяне. Древнейшая русская летопись, «Повесть временных лет», называет около десяти таких объединений  ';
+               
+        
+        
+        let predl = str1.replaceAll('и', '*');
+            //    console.log('str1',str1);
+            //    console.log( 'str1.predl',predl); //1 задание
+       
+                  let task2_s = str1.split('.');
+                  let task2_result = task2_s[0]; // первое предложение
+                //   console.log(task2_result); 
+
+                let task3_s = str1.split('.'); // разбиваемм на массив по разделителю точке
+                let task3_len = task3_s.length; // длина массива
+                let task3_result = task3_s[task3_len - 1]; // последий элемент в масиве
+                console.log('task3_result: ', task3_result);
+
+
+                // 4 задание
+                 let task4_s = str1.split('.');
+                 let task4_len = task4_s.length;
+                 let task4_result_s = task4_s[task3_len - 2]; // предпоследний индекс и обращение в предпоследнему предложению
+                 let tast4_words = task4_result_s.split(' '); // предпоследнее предложение 
+                 let task4_result = tast4_words[tast4_words.length - 1]; // последний элемент в массиве
+
+
+
+
+
+                 console.log('task4_result: ', task4_result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //    let index = str1.indexOf('Племена');
+                //    let pr1 = str1.substr(0, index);
+                //    console.log('pr1', pr1); // 2 задание
+
+                //    let index2= str1.indexOf('Древнейшая');
+                //    let prp = str1.substr(index2);
+                //    console.log('prp', prp); //3 задание
+
+                    //    let index3 = str1.indexOf('Словяне');
+                    //    let slov = str1.slice(index3, index3 + 9);
+                    //    console.log('slov',slov);//4 задание
+              </script>
+</body>
+</html>
