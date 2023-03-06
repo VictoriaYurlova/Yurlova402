@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+</head>
+<body>
+    <script> 
+       let strT = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.  '+  
+                  'Ut enim ad minima veniam, quis nostrum exercitationem ullam ' +
+                  'corporis suscipit laboriosam, nisi ut aliquid ex ea commodi ' +
+                  'consequatur!';
+        console.log('strT:', strT);
+
+        let str_1 = strT.split(' ');
+        console.log('str_1:', str_1);
+
+        let arr = [];
+        for(let i = 0; i < str_1.length; i++) {  
+            if (str_1[i].includes('a') == true) {
+                arr.push(str_1[i]);
+            }  
+        }
+        for(let j = 0; j < arr.length; j++) {
+            console.log(arr[j]);
+        }  
+
+        let str_result =``;
+        for(let l = 0; l < arr.length; l++) {
+            str_result+=`${arr[l]} `;
+        }
+        console.log('str_result:', str_result);
+
+
+    </script>
+</body>
+</html>
