@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функция</title>
+</head>
+<body>
+    
+    <script>
+        function Hello(last_mame, first_name, middle_name){
+            let end_index = middle_name.length - 1; // последний символ
+            let pre_end_index = end_index -1; // пред последний символ
+            let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase(); // окончание
+
+
+            // let s = last_symbol.toLowerCase();
+
+            //console.log(last_symbols);
+
+            let gender;
+
+            if (last_symbols == 'ИЧ') {
+                gender = 'м';
+            }  else if (last_symbols == 'ЛЫ') {
+                gender = 'м';
+            } else if (last_symbols == 'НА') {
+                gender = 'ж';
+            } else if (last_symbols == 'ЗЫ') {
+                gender = 'ж';
+            }
+
+
+            let date = new Date();
+            
+            let month = date.getMonth();
+            let day = date.getDate();
+
+            if (month == 2 && day == 8 && gender == 'ж') {
+                alert('С 8 марта! ' + first_name);
+            }
+
+            console.log(month, day, date.getHours(), date.getMinutes());
+
+
+
+
+
+
+            
+
+            //console.log(last_symbols);
+        }
+            Hello('Нестеров', 'Василий', 'Борисович');
+            Hello('Горбачёв', 'Альберт', 'Евгеньевич');
+            Hello('Рябова', 'Анна', 'Александровна');
+        
+      
+
+      // определить по ФИО пол человека
+// || логическое или
+// && логическое и 
+
+    </script>
+
+
+
+
+
+</body>
+</html>
