@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функция</title>
+</head>
+<body>
+    
+    <script>
+        function Hello(last_mame, first_name, middle_name){
+            let end_index = middle_name.length - 1; // последний символ
+            let pre_end_index = end_index -1; // пред последний символ
+            let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase(); // окончание
+
+
+            // let s = last_symbol.toLowerCase();
+
+            //console.log(last_symbols);
+
+            let gender;
+
+            if (last_symbols == 'ИЧ') {
+                gender = 'м';
+            }  else if (last_symbols == 'ЛЫ') {
+                gender = 'м';
+            } else if (last_symbols == 'НА') {
+                gender = 'ж';
+            } else if (last_symbols == 'ЗЫ') {
+                gender = 'ж';
+            }
+
+
+            let date = new Date();
+            
+            let month = date.getMonth();
+            let day = date.getDate();
+
+            if (month == 2 && day == 8 && gender == 'ж') {
+                alert('С 8 марта! ' + first_name);
+            }
+
+            console.log(month, day, date.getHours(), date.getMinutes());
+
+
+
+
+
+
+            
+
+            //console.log(last_symbols);
+        }
+            //Hello('Нестеров', 'Василий', 'Борисович');
+            //Hello('Горбачёв', 'Альберт', 'Евгеньевич');
+            //Hello('Рябова', 'Анна', 'Александровна');
+        
+      
+
+
+            let a = 'Hello world!' //создание переменной с глобальной областью видимости
+
+            function scope(name, last_mame, car = 'BMW', second_name) { //присваивание элемента по умолчанию через =
+                //let b = 'lorem ipsum';
+                //alert(name);
+
+                if(second_name == undefined){
+                    second_name = 'Петрович';
+                }
+
+                console.log('name: ', name, 'car: ', car, 'last_mame: ', last_mame, 'second_name: ', second_name); //вызов процедуры
+            }
+
+            function gender(middle_name){
+                let end_index = middle_name.length - 1; // последний символ
+            let pre_end_index = end_index -1; // пред последний символ
+            let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase(); // окончание
+
+
+            // let s = last_symbol.toLowerCase();
+
+            //console.log(last_symbols);
+
+            let gender = true;
+
+            if (last_symbols == 'ИЧ') {
+                gender = false; //мужчина
+            }  else if (last_symbols == 'ЛЫ') {
+                gender = false; // мужчина
+            } else if (last_symbols == 'НА') {
+                gender = true; //женщина
+            } else if (last_symbols == 'ЗЫ') {
+                gender = true; // женщина 
+            }
+
+            return gender; //возвращает 
+
+
+            }
+
+            scope('Анна', 'Рябова');
+            scope('Альберт', 'Нестеров', 'Nissan');
+
+        function selectCar(middle_name){
+            let car = 'BMW';
+            if (!gender(middle_name)) {
+                car = 'Nissan';
+            }
+            return car;
+            }
+            
+        
+
+           //let g = gender('Александровна');
+           console.log('selectCar: ', selectCar('Александрович'));
+
+
+          //  let right =  confirm('Верно?');
+
+          //  console.log('right: ', right);
+
+
+      // определить по ФИО пол человека
+// || логическое или
+// && логическое и 
+
+
+         let f = function(text){
+         console.log('text: ', text);
+         };
+
+         //console.log(f);
+         //f('echo');
+
+         let arrowFunc = (a, b) => {
+            console.log(a + b); //сложение функций 
+
+         }
+         arrowFunc(2, 8);
+
+         let userCar = (gender) => gender ? 'BMW' : 'Nissan'; // если это условие выполняется то наше значение будет БМВ иначе у нас будет ниссан
+         console.log('userCar: ', userCar());
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
