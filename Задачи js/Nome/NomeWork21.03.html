@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФИО</title>
+</head>
+<body>
+    <script>
+        const f = [];
+        
+        f[1] = prompt('Какая у Вас Фамилия?', '');
+        f[2] = prompt('Какое Ваше Имя?', '');
+        f[3] = prompt('Укажите Ваше Отчество?', '');
+        let middle_name = f[3];
+        console.log('midle_name=',middle_name);
+        function gender(middle_name){
+                    let end_index = middle_name.length - 1; 
+                    let pre_end_index = end_index - 1; 
+                    let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase();  
+                    let gender; 
+        
+                    if (last_symbols == 'ИЧ') {
+                        gender = 'м' ; 
+                    } else if (last_symbols == 'ЛЫ') {
+                        gender = 'м';
+                    } else if (last_symbols == 'НА') {
+                        gender = 'ж'; 
+                    } else if (last_symbols == 'ЗЫ') {
+                        gender = 'ж' ; 
+                        
+                     
+        
+                    }        
+        
+                  return gender;
+                
+                }
+                let g = gender(middle_name);
+                console.log('gender:',g); 
+                let car;
+                function selectCar(middle_name){
+                    if (g='ж') {
+                        car = 'BMW';
+                    }
+            else 
+                   if (g='м'){
+                    car='Nissan';
+                   }
+            return car;
+        }
+        let acar = selectCar(middle_name);
+        console.log('acar',acar);
+        var v = confirm('Автомобиль' + ' ' + acar + '?');
+            if (v==true) {
+                alert ('Вы' +' ' + f+' '+ g +' ' + acar );
+            } else if (v==false) {
+               var prcar = prompt('Автомобиль?');
+               let prcar_save = prcar;
+               alert('Вы'+' ' + f+' '+ g +' ' +prcar_save );
+            }
+        ;
+        </script>
+</body>
+</html>
