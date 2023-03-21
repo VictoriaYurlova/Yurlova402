@@ -8,59 +8,60 @@
 </head>
 <body>
     <script>
-        const f = [];
-        
-        f[1] = prompt('Какая у Вас Фамилия?', '');
-        f[2] = prompt('Какое Ваше Имя?', '');
-        f[3] = prompt('Укажите Ваше Отчество?', '');
-        let middle_name = f[3];
-        console.log('midle_name=',middle_name);
-        function gender(middle_name){
-                    let end_index = middle_name.length - 1; 
-                    let pre_end_index = end_index - 1; 
-                    let last_symbols = (middle_name[pre_end_index] + middle_name[end_index]).toUpperCase();  
-                    let gender; 
-        
-                    if (last_symbols == 'ИЧ') {
-                        gender = 'м' ; 
-                    } else if (last_symbols == 'ЛЫ') {
-                        gender = 'м';
-                    } else if (last_symbols == 'НА') {
-                        gender = 'ж'; 
-                    } else if (last_symbols == 'ЗЫ') {
-                        gender = 'ж' ; 
-                        
-                     
-        
-                    }        
-        
-                  return gender;
-                
-                }
-                let g = gender(middle_name);
-                console.log('gender:',g); 
-                let car;
-                function selectCar(middle_name){
-                    if (g='ж') {
-                        car = 'BMW';
-                    }
-            else 
-                   if (g='м'){
-                    car='Nissan';
-                   }
-            return car;
-        }
-        let acar = selectCar(middle_name);
-        console.log('acar',acar);
-        var v = confirm('Автомобиль' + ' ' + acar + '?');
-            if (v==true) {
-                alert ('Вы' +' ' + f+' '+ g +' ' + acar );
-            } else if (v==false) {
-               var prcar = prompt('Автомобиль?');
-               let prcar_save = prcar;
-               alert('Вы'+' ' + f+' '+ g +' ' +prcar_save );
+        let F = prompt('Введите своё ФИО:');
+
+        let arr_f = F.split(' ');
+
+        let last_name = arr_f[2];
+
+        function gender(last_name) {
+            let end_index = last_name.length - 1;
+            let pre_end_index = end_index - 1;
+            let last_symbol = (last_name[pre_end_index] + last_name[end_index]).toUpperCase();
+
+            let gender;
+            
+            if (last_symbol == 'ИЧ') {
+                gender = 'М'; 
+            } else if (last_symbol == 'ЛЫ') {
+                gender = 'М'; 
+            } else if (last_symbol == 'НА') {
+                gender = 'Ж';
+            } else if (last_symbol == 'ЗЫ') {
+                gender = 'Ж'; 
             }
-        ;
-        </script>
+
+            return gender;
+
+        }
+        let g = gender(last_name);
+
+        function selectCar(last_name) {
+            let car = 'BMW';            
+
+            if (g == 'М') { 
+                car = 'Nissan';
+            }
+
+            return car;
+
+        }
+
+        let resulte = confirm("Какая у Вас машина "+selectCar(last_name)+" ?");
+        let resulte_car;
+
+        if (resulte) {
+            alert("Замечательный выбор)");
+        }  else {
+            resulte_car = prompt('Какая у вас марка авто?',);           
+        }
+        console.log('ФИО:', F);
+        console.log('Пол:', g);
+        console.log('Марка автомобиля: ',selectCar(last_name));
+        if ( ( resulte_car == selectCar(last_name) ) || (resulte_car == undefined) ) {}
+           else {
+            console.log('Марка автомобиля(правильная):', resulte_car);
+        }
+    </script>
 </body>
 </html>
