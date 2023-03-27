@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зарплата</title>
+</head>
+<body>
+    <h1>Объекты</h1>
+
+    <script>
+        let user = {
+            name: 'Georgi',
+            last_name: 'Facello',
+            age: 30,
+            cat: {
+                name: 'Happy',
+                age: 1,
+            },
+            'country-birthday': 'rus',
+            get full_name() {
+                return `${this.last_name} ${this.name}`;
+            },
+            salaries: [
+                {
+                  salary: '5670',
+                  from_date: '2009'
+                },
+                {
+                  salary: '1670',
+                  from_date: '2018'
+                },
+                {
+                  salary: '15670',
+                  from_date: '2012'
+                },
+            ],
+            get max() {
+                return `math.max`;
+           
+            }
+            };
+         
+
+       // console.log(user.full_name, user.salaries);
+       console.log(user.full_name, Math.max(5670, 1670, 15670), Math.min(5670, 1670, 15670))
+    </script>
+</body>
+</html>
