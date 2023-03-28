@@ -10,41 +10,96 @@
     <h1>Объекты</h1>
 
     <script>
-        let user = {
-            name: 'Georgi',
-            last_name: 'Facello',
-            age: 30,
-            cat: {
-                name: 'Happy',
-                age: 1,
-            },
-            'country-birthday': 'rus',
+         let user = {
+               "emp_no": 10001,
+               "birth_date": "1953-09-02",
+               "first_name": "Василий",
+               "last_name": "Петров",
+               "gender": "M",
+               "hire_date": "1993-06-26",
+               "dept": [
+                    {
+                    "dept_no": "d005",
+                    "dept_name": "Development",
+                    "from_date": "1976-06-26",
+                    "to_date": "9999-01-01"
+               },
+               ],
+               'country-birthday': 'rus',
             get full_name() {
-                return `${this.last_name} ${this.name}`;
+                return `${this.last_name} ${this.first_name}`;
             },
-            salaries: [
-                {
-                  salary: '5670',
-                  from_date: '2009'
-                },
-                {
-                  salary: '1670',
-                  from_date: '2018'
-                },
-                {
-                  salary: '15670',
-                  from_date: '2012'
-                },
-            ],
-            get max() {
-                return `math.max`;
-           
-            }
-            };
-         
+               "salaries": [
+                    {
+                    "salary": 50642,
+                    "from_date": "1976-06-26",
+                    "to_date": "1977-06-26"
+               },
+               {
+                    "salary": 20802,
+                    "from_date": "1977-06-26",
+                    "to_date": "1978-06-25"
+               },
+               {
+                    "salary": 65700,
+                    "from_date": "1978-06-25",
+                    "to_date": "1979-06-25"
+               },
+               {
+                    "salary": 30752,
+                    "from_date": "1979-06-25",
+                    "to_date": "1980-06-25"
+               },
+               {
+                    "salary": 90563,
+                    "from_date": "1991-06-25",
+                    "to_date": "1992-06-24"
+               },
+               ],
+               "title": {
+                    "title": "Senior Engineer",
+                    "from_date": "1976-06-26",
+                    "to_date": "9999-01-01"
+               },
 
-       // console.log(user.full_name, user.salaries);
-       console.log(user.full_name, Math.max(5670, 1670, 15670), Math.min(5670, 1670, 15670))
+               get max() {
+                let arr_sal = user.salaries;
+    
+                let find_max = Math.max(...arr_sal.map(o => o.salary));
+
+                return `${find_max}`;
+
+               },
+
+               get min() {
+                let arr_sal = user.salaries;
+    
+                let find_min = Math.min(...arr_sal.map(o => o.salary));
+
+                return `${find_min}`;
+
+               },
+
+               get  average() {
+                let sum = 0;
+                let arr_sal = user.salaries;
+                let len_s = user.salaries.length;
+
+                for (let i = 0; i < len_s; i++) {
+                    sum = sum + arr_sal[i].salary;   
+                }
+
+                let find_avg = sum / len_s;
+
+                return `${find_avg}`;
+            }, 
+        };
+       
+        console.log(user.full_name);
+        console.log('max salary:', user.max);
+        console.log('min salary:', user.min);
+        console.log('average salary:', user.average);
+
     </script>
 </body>
 </html>
