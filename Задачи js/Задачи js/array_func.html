@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функции для работы с массивом</title>
+</head>
+<body>
+    <h1>Функции для работы с массивом</h1>
+    <script>
+        let arr = [15, 56, 21, 88, 77, 1, 9, 132, 45, 37];
+        /*let arr2 = arr.filter((item, index, array) => {    //элемент итерации, индекс, сам наш массив используемый
+            //console.log(item);
+            return item > 50;  // значение больше 50
+        });*/
+        let arr2 = arr.filter(item => item > 50);  //другая сокращенная запись  
+        let arr3 = arr
+                   .map((item, index, array) => {
+                        return item > 50 ? item / 2 : item * 2; //если числа больше 50 мы их делим на два, а если числа меньше 50 умножаем на 2
+            })
+                 .filter(item => item > 40); //отфильтровать результат где значения больше 40
+        
+        let arr4 = arr.sort((a, b) => a - b);     // а это чисто текущее, а в это следующее число
+              //=== сравнение не только значений но и типы данных
+         //et arr5 = arr.reverse(); //разворачивает массив первые уходит в конец 
+         
+        // let sum = 0;
+        // for (let i = 0; i < arr.length; i ++) {
+        //    sum += arr[i];
+        // };
+         
+        arr = [1, 2, 3, 4, 5];
+         let arr6 = arr.reduce((sum, item, index, array) => {   // просчет факториала 
+            return sum * item;
+         }, 1);      //изначальное значение переменной обязательно должно передаваться  
+         console.log(arr6);
+    </script>
+</body>
+</html>
