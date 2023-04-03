@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объекты</title>
+</head>
+<body>
+    <h1>Объекты</h1>
+
+    <script>
+         let user = {
+               "emp_no": 10001,
+               "birth_date": "1953-09-02",
+               "first_name": "Georgi",
+               "last_name": "Facello",
+               "gender": "M",
+               "hire_date": "1976-06-26",
+               "dept": [
+                    {
+                    "dept_no": "d005",
+                    "dept_name": "Development",
+                    "from_date": "1976-06-26",
+                    "to_date": "9999-01-01"
+               },
+               ],
+               'country-birthday': 'rus',
+            get full_name() {
+                return `${this.last_name} ${this.first_name}`;
+            },
+               "salaries": [
+                    {
+                    "salary": 60117,
+                    "from_date": "1976-06-26",
+                    "to_date": "1977-06-26"
+               },
+               {
+                    "salary": 62102,
+                    "from_date": "1977-06-26",
+                    "to_date": "1978-06-25"
+               },
+               {
+                    "salary": 66074,
+                    "from_date": "1978-06-25",
+                    "to_date": "1979-06-25"
+               },
+               {
+                    "salary": 69896,
+                    "from_date": "1979-06-25",
+                    "to_date": "1980-06-25"
+               },
+               {
+                    "salary": 61046,
+                    "from_date": "1981-06-25",
+                    "to_date": "1982-06-24"
+               },
+               ],
+               "title": {
+                    "title": "Senior Engineer",
+                    "from_date": "1976-06-26",
+                    "to_date": "9999-01-01"
+               },
+
+               get max() {
+                let arr_sal = user.salaries;
+    
+                let find_max = Math.max(...arr_sal.map(o => o.salary));
+
+                return `${find_max}`;
+
+               },
+
+               get min() {
+                let arr_sal = user.salaries;
+    
+                let find_min = Math.min(...arr_sal.map(o => o.salary));
+
+                return `${find_min}`;
+
+               },
+
+               get  average() {
+                let arr_sal = user.salaries;
+    const summ = arr_sal.reduce( function(sum,cr){
+       return  sum + cr.salary; },0)
+       let avg = summ/arr_sal.length;
+       return `${avg}`;
+       }
+
+        };
+       
+        console.log(user.full_name);
+        console.log('max salary:', user.max);
+        console.log('min salary:', user.min);
+        console.log('average salary:', user.average);
+
+
+
+
+        
+       
+    </script>
+</body>
+</html>
