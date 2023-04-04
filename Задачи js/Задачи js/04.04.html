@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зарплата</title>
+</head>
+<body>
+       <script>
+        let employees = {
+            "emp_no": '1001',
+        "salaries": [
+                    {
+                    "salary": 60117,
+                    "from_date": "1976-06-26",
+               },
+               {
+                    "salary": 52407,
+                    "from_date": "1977-06-26",
+               },
+               {
+                    "salary": 66074,
+                    "from_date": "1978-06-25",
+               },
+               {
+                    "salary": 69896,
+                    "from_date": "1979-06-25", 
+               },
+               {
+                    "salary": 61046,
+                    "from_date": "1981-06-25", 
+               },
+                ]}
+            let arr_salaries = employees.salaries.map((item, index, array) => {
+                return item.salary
+                })
+            let arr_salary = arr_salaries.map((item,index,array) => {
+                    return ('' + item).split("") //преобразование из числа в строку
+            }) 
+             //let u_num = [];
+
+           // for (let i = 0; i< arr_salary.length; i++) {
+           //     u_num[i] = arr_salary[i].reduce((sum, item, index, array) => {
+           //         return Number(sum) + Number(item)
+           //     });
+           // }
+                 let u_num = arr_salary.map((item) => {
+                     return item.reduce((sum, item, index, array) => {
+                         return (+sum) + (+item);
+                     });
+                 });
+
+                 let aaa = '18';
+                 let w = u_num.filter(item => item == aaa);
+                 console.log('win: ' , w);
+
+
+
+
+
+
+
+
+
+            //arr_salary.forEach((item)=> {
+            //    
+            //    console.log(item);
+            //});
+//
+            //let aaa = '18';
+            //console.log(typeof(+aaa)); // поставили знак плюс и получилось число
+            //alert("Ура!!!");
+//
+            //console.log(arr_salaries)
+            console.log(u_num);
+    </script>
+</body>
+</html>
